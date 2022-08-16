@@ -16,10 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from core.api import viewsets as coreviewsets
+from core.api import viewsets as investappviewsets
 
 route = routers.DefaultRouter()
-route.register(r'core/', coreviewsets.CoreViewSet, basename='Core')
+route.register(r'investApp', investappviewsets.InvestAppViewSet,
+               basename='InvestApp')
 
 urlpatterns = [
     path('admin/', admin.site.urls),

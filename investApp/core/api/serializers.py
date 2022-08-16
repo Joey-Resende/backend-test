@@ -2,7 +2,7 @@ from rest_framework import serializers
 from core import models
 
 
-class CoreSerializer(serializers.ModelSerializer):
+class InvestAppSerializer(serializers.ModelSerializer):
     class Meta:
-        model = models.Core
+        model = models.Invest
         fields = '__all__'
