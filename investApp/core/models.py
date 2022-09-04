@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Invest(models.Model):
+    """Essa classe cria uma instancia de Investimento"""
     id_invest = models.AutoField(primary_key=True)
     invest_type = models.CharField(
         max_length=150, verbose_name='Tipo de Investimento')
